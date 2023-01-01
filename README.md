@@ -26,5 +26,5 @@ pipeline creates a docker build, push to remote container repository , and deplo
   
   Commands for creating a docker container:<br>
  <b>docker build -t hello-world .<br>
-  docker run -d -p 4001:4000 hello-world </b>
+  docker run -d -p 4000:4000 hello-world </b>
 
