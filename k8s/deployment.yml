@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-hello
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: app-hello
+  template:
+    metadata:
+      labels:
+        app: app-hello
+    spec:
+      containers:
+      - name: container-1
+        image: artemrafikov/artemrepo:hello-world
+        ports:
+          - containerPort: 4000
